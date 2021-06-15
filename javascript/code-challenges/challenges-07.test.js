@@ -141,10 +141,10 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
-  for (let index = 0; index < recipe.ingredients.length; index++) {
-    result.push(recipe.ingredients[index].slice(-1));
+  for(let i=0;i<recipe.ingredients.length;i++){
+    let str = recipe.ingredients[i].indexOf(' ', 6);
+    result.push(recipe.ingredients[i].slice(str + 1));
   }
-  
   return result;
 };
 
