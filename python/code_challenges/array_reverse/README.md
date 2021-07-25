@@ -4,7 +4,7 @@ it want us to write a code to revarse any array without using the built_in funct
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![cc1](./cc1.png)
+![cc1](./array-reverse.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
