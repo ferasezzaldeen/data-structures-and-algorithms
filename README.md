@@ -25,3 +25,4 @@ To run your tests
 | Table of Content | |
 | -------------- |------------- |
 | Array Reverse | [link](./python/code_challenges/array_reverse/README.md)
+| Array Insert Shift | [link](./python/code_challenges/array-insert-shift/README.md)
