@@ -24,5 +24,6 @@ To run your tests
 
 | Table of Content | |
 | -------------- |------------- |
-| Array Reverse | [link](./python/code_challenges/array_reverse/README.md)
-| Array Insert Shift | [link](./python/code_challenges/array-insert-shift/README.md)
+| Array Reverse | [link](./python/code_challenges/array_reverse/README.md) |
+| Array Insert Shift | [link](./python/code_challenges/array-insert-shift/README.md) |
+| array-binary-search | [link](./python/code_challenges/array-binary-search/README.md) |
