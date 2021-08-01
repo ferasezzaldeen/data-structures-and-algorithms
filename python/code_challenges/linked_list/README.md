@@ -9,7 +9,10 @@ to right some function and test about the Singly Linked List
 
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+make the requiered function and them make a test to see if the function works correctly 
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+insert: to insert a new node to the linked list at the beggining 
+include: to see if a value is in a particule linked list 
+
