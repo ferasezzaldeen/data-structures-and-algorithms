@@ -40,6 +40,43 @@ class LinkedList():
         string += "NULL"
         return string
 
+    def appendvalue(self,value):
+        new_node=Node(value)
+        if self.head==None:
+            self.head=new_node
+        else:
+            currunt=self.head
+            while currunt.next:
+                currunt=currunt.next
+            currunt.next=new_node
+        
+       
+                
+    def insert_befor(self,value,new_value):
+        new_node=Node(new_value)
+        if self.head.value==value:
+            self.insert(new_value)
+        else:
+            currunt=self.head
+            while currunt.next:
+                if currunt.next.value==value:
+                    new_node.next=currunt.next
+                    currunt.next=new_node
+                    break
+                currunt=currunt.next
+
+    def insert_after(self,value,new_value):
+        new_node=Node(new_value)
+        if self.head.value==value:
+            self.head.next=new_node
+        else:
+            currunt=self.head
+            while currunt:
+                if currunt.value==value:
+                    new_node.next=currunt.next
+                    currunt.next=new_node
+                    break
+                currunt=currunt.next   
 
 
 if __name__ == "__main__":
