@@ -162,3 +162,65 @@ def test_insert_after_last():
     expected="45 -> 55 -> 66 -> 50 -> NULL"
     actual=test.__str__()
     assert actual==expected
+
+
+# Where k is greater than the length of the linked list
+
+def test_kth_from_end():
+    test=LinkedList()
+    test.insert(66)
+    test.insert(55)
+    test.insert(45)
+    test.insert(35)
+    test.insert(30)
+    test.insert(25)
+    test.insert(20)
+    test.insert(15)
+    test.insert(10)
+    
+    expected=35
+    actual=test.kth_from_end(3)
+    assert actual==expected
+
+
+#Where k and the length of the list are the same
+def test_kth_same_length():
+    test=LinkedList()
+    test.insert(66)
+    test.insert(55)
+    test.insert(45)
+    test.insert(35)
+    expected='the k value is the same as the length of the list, please change it'
+    actual=test.kth_from_end(4)
+    assert actual==expected
+
+# Where k is not a positive integer
+def test_kth_is_negative():
+    test=LinkedList()
+    test.insert(66)
+    test.insert(55)
+    test.insert(45)
+    test.insert(35)
+    expected='k is negative, please enter a positive number'
+    actual=test.kth_from_end(-1)
+    assert actual==expected
+
+# Where the linked list is of a size 1
+def test_kth_when_list_length_equal_one():
+    test=LinkedList()
+    test.insert(66)
+    expected=66
+    actual=test.kth_from_end(0)
+    assert actual==expected
+
+#“Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+def test_kth_where_k_is_in_the_middle():
+    test=LinkedList()
+    test.insert(66)
+    test.insert(60)
+    test.insert(55)
+    test.insert(45)
+    test.insert(35)
+    expected=55
+    actual=test.kth_from_end(2)
+    assert actual==expected

@@ -29,3 +29,4 @@ To run your tests
 | array-binary-search | [link](./python/code_challenges/array-binary-search/README.md) |
 | linked-list| [link](./python/code_challenges/linked_list/README.md) |
 | linked-list-insertions| [link](./python/code_challenges/linked-list-insertions/README.md) 
+| linked-list-kth| [link](./python/code_challenges/linked-list-kth/README.md) 
