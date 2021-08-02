@@ -78,6 +78,29 @@ class LinkedList():
                     break
                 currunt=currunt.next   
 
+    def kth_from_end(self,num):
+        current=self.head
+        sol=[]
+        if num<0:
+            return 'k is negative, please enter a positive number'
+        while current:
+            sol.append(current.value)
+            current=current.next
+        if len(sol)> num:
+            sol.reverse()
+            return sol[num]
+        elif len(sol)==num:
+            return 'the k value is the same as the length of the list, please change it'
+        elif len(sol)<num:
+
+            raise Exception
+
+        
+
+
+
+
+
 
 if __name__ == "__main__":
   ll = LinkedList()
