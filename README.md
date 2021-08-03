@@ -30,3 +30,8 @@ To run your tests
 | linked-list| [link](./python/code_challenges/linked_list/README.md) |
 | linked-list-insertions| [link](./python/code_challenges/linked-list-insertions/README.md) 
 | linked-list-kth| [link](./python/code_challenges/linked-list-kth/README.md) 
+| linked-list-zip| [link](./python/code_challenges/linked_list_zip/README.md) 
+
+
+
+
