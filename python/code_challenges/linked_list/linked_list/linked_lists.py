@@ -83,17 +83,32 @@ class LinkedList():
         sol=[]
         if num<0:
             return 'k is negative, please enter a positive number'
-        while current:
-            sol.append(current.value)
+        
+        counter=0
+        while current.next:
+            counter +=1
             current=current.next
-        if len(sol)> num:
-            sol.reverse()
-            return sol[num]
-        elif len(sol)==num:
+        if counter+1==num:
             return 'the k value is the same as the length of the list, please change it'
-        elif len(sol)<num:
-
+        if counter<num:
             raise Exception
+        position=counter-num
+        current=self.head
+        for x in range(position):
+            current=current.next
+        return current.value
+    
+        # while current:
+        #     sol.append(current.value)
+        #     current=current.next
+        # if len(sol)> num:
+        #     sol.reverse()
+        #     return sol[num]
+        # elif len(sol)==num:
+        #     return 'the k value is the same as the length of the list, please change it'
+        # elif len(sol)<num:
+
+        #     raise Exception
 
         
 
