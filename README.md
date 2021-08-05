@@ -31,7 +31,7 @@ To run your tests
 | linked-list-insertions| [link](./python/code_challenges/linked-list-insertions/README.md) 
 | linked-list-kth| [link](./python/code_challenges/linked-list-kth/README.md) 
 | linked-list-zip| [link](./python/code_challenges/linked_list_zip/README.md) 
-
+| stack-and-queue| [link](./python/code_challenges/stack-and-queue/README.md) 
 
 
 
