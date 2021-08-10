@@ -33,5 +33,5 @@ To run your tests
 | linked-list-zip| [link](./python/code_challenges/linked_list_zip/README.md) 
 | stack-and-queue| [link](./python/code_challenges/stack-and-queue/README.md) 
 | stack-queue-pseudo| [link](./python/code_challenges/stack_queue_pseudo/README.md) 
-
+| stack_queue_animal_shelter| [link](./python/code_challenges/stack_queue_animal_shelter/README.md) 
 
