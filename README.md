@@ -35,6 +35,6 @@ To run your tests
 | stack-queue-pseudo| [link](./python/code_challenges/stack_queue_pseudo/README.md) 
 | stack_queue_animal_shelter| [link](./python/code_challenges/stack_queue_animal_shelter/README.md) 
 | stack_queue_brackets| [link](./python/code_challenges/stack_queue_brackets/README.md) 
-
+| trees| [link](./python/code_challenges/trees/README.md) 
 
 

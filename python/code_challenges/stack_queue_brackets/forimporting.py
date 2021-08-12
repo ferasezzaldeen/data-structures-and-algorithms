@@ -16,9 +16,11 @@ class StackEmptyException(Exception):
 class Stack:
     def __init__(self,node=None):
         self.top=node
+        
   
     def push(self, value):
-        node= Node(value) 
+        node= Node(value)
+       
         node.next = self.top 
         self.top = node
 
@@ -46,6 +48,8 @@ class Stack:
             currunt=currunt.next
         str+= "None"
         return str
+    
+
 
 
 
