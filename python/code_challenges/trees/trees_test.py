@@ -41,3 +41,11 @@ def test_postorder():
     test.root.right = Node(5)    
     test.root.left = Node(7) 
     assert test.post_order()==[7,5,2]
+
+#test for the tree_max method
+def test_tree_max():
+    test=Binary_Tree()
+    test.root = Node(2)
+    test.root.right = Node(5)    
+    test.root.left = Node(7)     
+    assert test.tree_max()==7
