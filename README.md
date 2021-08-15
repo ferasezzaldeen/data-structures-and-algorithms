@@ -36,5 +36,5 @@ To run your tests
 | stack_queue_animal_shelter| [link](./python/code_challenges/stack_queue_animal_shelter/README.md) 
 | stack_queue_brackets| [link](./python/code_challenges/stack_queue_brackets/README.md) 
 | trees| [link](./python/code_challenges/trees/README.md) 
-
+| trees-max| [link](./python/code_challenges/trees/maxreadme.md) 
 

@@ -45,6 +45,9 @@ class Binary_Tree:
             self.sol.append(current.value)
         post_order_list(current)
         return self.sol
+    def tree_max(self):
+        temp=self.pre_order()
+        return max(temp)
 
 
 
@@ -98,4 +101,5 @@ if __name__=='__main__':
     test.add(7)
     print(test.pre_order())
     print(test.contains(3))
+    print(bt.tree_max())
     
