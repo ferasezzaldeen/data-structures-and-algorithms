@@ -47,7 +47,11 @@ class Binary_Tree:
         return self.sol
     def tree_max(self):
         temp=self.pre_order()
-        return max(temp)
+        sol=0
+        for x in temp:
+            if x>sol:
+                sol=x
+        return sol
 
 
 
