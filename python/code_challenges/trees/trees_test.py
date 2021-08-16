@@ -49,3 +49,17 @@ def test_tree_max():
     test.root.right = Node(5)    
     test.root.left = Node(7)     
     assert test.tree_max()==7
+
+
+#test for breadth_first
+def test_breadth_first():
+    bt = Binary_Tree()  
+    bt.root = Node(2)    
+    bt.root.right = Node(5)    
+    bt.root.left = Node(7)    
+    bt.root.left.left = Node(2)    
+    bt.root.left.right = Node(6)    
+    bt.root.right.right = Node(9)    
+    bt.root.right.left = Node(4)
+  
+    assert bt.breadth_first()== [2,7,5,2,6,4,9]

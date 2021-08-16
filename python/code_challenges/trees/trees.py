@@ -1,4 +1,4 @@
-
+from forimporting import *
 
 class Node:
     def __init__(self,value):
@@ -52,6 +52,21 @@ class Binary_Tree:
             if x>sol:
                 sol=x
         return sol
+    
+    def breadth_first(self):
+        temp=Queue()
+        sol=[]
+        current=self.root
+        temp.enqueue(current)
+        while temp.front:
+            current=temp.dequeue()
+            sol.append(current.value)
+            if current.left:
+                temp.enqueue(current.left)
+            if current.right:
+                temp.enqueue(current.right)
+           
+        return sol
 
 
 
@@ -91,19 +106,18 @@ if __name__=='__main__':
     bt.root.right = Node(5)    
     bt.root.left = Node(7)    
     bt.root.left.left = Node(2)    
-    bt.root.left.right = Node(6)   
-    bt.root.left.right.left = Node(5)    
-    bt.root.left.right.right = Node(11)   
+    bt.root.left.right = Node(6)    
     bt.root.right.right = Node(9)    
-    bt.root.right.right.left = Node(4)
+    bt.root.right.left = Node(4)
     print(bt.pre_order()) 
     print(bt.in_order())
     print(bt.post_order())
-    test=Binary_Search_Tree()
-    test.add(5)
-    test.add(2)
-    test.add(7)
-    print(test.pre_order())
-    print(test.contains(3))
-    print(bt.tree_max())
+    print(bt.breadth_first())
+    # test=Binary_Search_Tree()
+    # test.add(5)
+    # test.add(2)
+    # test.add(7)
+    # print(test.pre_order())
+    # print(test.contains(3))
+    # print(bt.tree_max())
     
