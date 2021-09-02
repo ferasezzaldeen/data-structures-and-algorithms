@@ -85,3 +85,14 @@ class Queue:
         if (not self.rear and self.front) or (self.rear and not self.front):
             raise Exception("empty queue")
         return not self.rear
+
+
+
+
+
+
+
+
+
+
+
