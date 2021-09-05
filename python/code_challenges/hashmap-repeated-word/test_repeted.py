@@ -11,3 +11,5 @@ def test_repeat_with_punctuation_marks():
 
 def test_repeted_function_with_capitals():
     assert repeated_word('This is my first test in this cc')=='this'
+def test_repeted_function_with_faluier():
+    assert repeated_word('This is my first')=='there is no repetetion'
