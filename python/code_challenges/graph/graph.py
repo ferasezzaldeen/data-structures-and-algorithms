@@ -1,3 +1,5 @@
+from forimporting import *
+
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -68,6 +70,16 @@ class Graph:
         return nodes
 
 
+    def depth_first(self,node:Vertex):
+        sol=[]
+        def inside(node:Vertex):
+            sol.append(node)
+            nigh=self.get_neighbours(node)
+            for x in nigh:
+                inside(x[1])
+        inside(node)    
+        return sol
+
 
     def get_nodes(self):
         if len(list(self.adjacency.keys())) > 0:
@@ -101,15 +113,12 @@ if __name__=='__main__':
     teast.add_node('c')
     teast.add_node('d')
     teast.add_node('x')
-    teast.add_edge('a','b',8)
-    teast.add_edge('a','d',2)
+    teast.add_edge('a','b')
     teast.add_edge('a','c')
-    teast.add_edge('b','a',8)
-    teast.add_edge('c','a')
-    teast.add_edge('c','d',7)
-    teast.add_edge('d','a',2)
-    teast.add_edge('d','b',8)
-    teast.add_edge('d','c',7)
+    teast.add_edge('b','d')
+    teast.add_edge('b','x',)
+    
     print(teast.get_nodes())
     print(teast.get_neighbours('a'))
     print(teast.bfs('a'))
+    teast.depth_first('a')
