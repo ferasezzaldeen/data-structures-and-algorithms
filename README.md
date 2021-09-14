@@ -46,3 +46,4 @@ To run your tests
 | left_join| [link](./python/code_challenges/hashmap-left-join/README.md) 
 | Graph| [link](./python/code_challenges/graph/README.md) 
 | Graph_trip| [link](./python/code_challenges/graph/bf.md) 
+| Graph_DFS| [link](./python/code_challenges/graph/dfs.md) 
